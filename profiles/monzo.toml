@@ -1,0 +1,17 @@
+name = "Monzo Crawler"
+start_url = "https://monzo.com"
+
+[filters.propagate]
+domain = [ "monzo.com" ]
+sub_domain = [ "" ]
+
+[filters.log]
+domain = []
+sub_domain = []
+
+[policy.match_full_urls]
+enabled = true
+
+[policy.match_relative_urls]
+enabled = true
+attempt_propagation = true
