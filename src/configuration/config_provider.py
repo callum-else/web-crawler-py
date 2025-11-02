@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from loguru import logger
 from pydantic import ValidationError
 from tomllib import load, TOMLDecodeError
-from src.configuration.config_models import ProfileConfig, WorkerConfig
+from src.configuration import ProfileConfig, WorkerConfig
 
 class ConfigurationProvider:
     def __init__(self, ):

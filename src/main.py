@@ -2,7 +2,7 @@ import argparse
 import inject
 
 from loguru import logger
-from src.configuration.config_provider import ConfigurationProvider
+from src.configuration import ConfigurationProvider
 
 parser = argparse.ArgumentParser(description="Web Crawler")
 parser.add_argument("--profile", type=str, required=True, help="Path to the profile toml file")
